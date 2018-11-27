@@ -11,7 +11,8 @@ import {
   List,
   Quote,
   Slide,
-  Text
+  Text,
+  Image
 } from "spectacle";
 
 // Import theme
@@ -19,6 +20,11 @@ import createTheme from "spectacle/lib/themes/default";
 
 // Require CSS
 require("normalize.css");
+
+const images = {
+  monolith: require("../assets/monolith.png"),
+  micro: require("../assets/micro.png")
+};
 
 const theme = createTheme(
   {
@@ -36,20 +42,162 @@ const theme = createTheme(
 export default class Presentation extends React.Component {
   render() {
     return (
-      <Deck
-        transition={["zoom", "slide"]}
-        transitionDuration={500}
-        theme={theme}
-      >
-        <Slide transition={["zoom"]} bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Spectacle Boilerplate
+      <Deck transition={["fade"]} transitionDuration={500} theme={theme}>
+        <Slide bgColor="tertiary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Micro Frontends
           </Heading>
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-            open the presentation/index.js file to get started
+          <Text margin="10px 0 0" textColor="secondary" fit bold>
+            Matheus Lima
           </Text>
         </Slide>
-        <Slide transition={["fade"]} bgColor="tertiary">
+        <Slide bgColor="primary">
+          <Heading size={3} lineHeight={1.4} textColor="secondary">
+            O que buscamos em um projeto de Software?
+          </Heading>
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading margin="20px" size={4} textColor="tertiary">
+            Escalabilidade
+          </Heading>
+          <Heading
+            style={{ opacity: 0.3 }}
+            margin="20px"
+            size={4}
+            textColor="tertiary"
+          >
+            Performance
+          </Heading>
+          <Heading
+            style={{ opacity: 0.3 }}
+            margin="20px"
+            size={4}
+            textColor="tertiary"
+          >
+            Evolução
+          </Heading>
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading
+            style={{ opacity: 0.3 }}
+            margin="20px"
+            size={4}
+            textColor="tertiary"
+          >
+            Escalabilidade
+          </Heading>
+          <Heading margin="20px" size={4} textColor="tertiary">
+            Performance
+          </Heading>
+          <Heading
+            style={{ opacity: 0.3 }}
+            margin="20px"
+            size={4}
+            textColor="tertiary"
+          >
+            Evolução
+          </Heading>
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading
+            style={{ opacity: 0.3 }}
+            margin="20px"
+            size={4}
+            textColor="tertiary"
+          >
+            Escalabilidade
+          </Heading>
+          <Heading
+            style={{ opacity: 0.3 }}
+            margin="20px"
+            size={4}
+            textColor="tertiary"
+          >
+            Performance
+          </Heading>
+          <Heading margin="20px" size={4} textColor="tertiary">
+            Evolução
+          </Heading>
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading size={3} lineHeight={1.4} textColor="secondary">
+            No Front-End, nunca tivemos os três juntos
+          </Heading>
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading margin="20px" size={4} textColor="tertiary">
+            Escalabilidade
+          </Heading>
+          <Heading margin="20px" size={4} textColor="tertiary">
+            Performance
+          </Heading>
+          <Heading
+            style={{ opacity: 0.3 }}
+            margin="20px"
+            size={4}
+            textColor="tertiary"
+          >
+            Evolução
+          </Heading>
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading margin="20px" size={4} textColor="tertiary">
+            Escalabilidade
+          </Heading>
+          <Heading
+            style={{ opacity: 0.3 }}
+            margin="20px"
+            size={4}
+            textColor="tertiary"
+          >
+            Performance
+          </Heading>
+          <Heading margin="20px" size={4} textColor="tertiary">
+            Evolução
+          </Heading>
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading
+            style={{ opacity: 0.3 }}
+            margin="20px"
+            size={4}
+            textColor="tertiary"
+          >
+            Escalabilidade
+          </Heading>
+          <Heading margin="20px" size={4} textColor="tertiary">
+            Performance
+          </Heading>
+          <Heading margin="20px" size={4} textColor="tertiary">
+            Evolução
+          </Heading>
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading size={3} lineHeight={1.4} textColor="secondary">
+            Mas isso está próximo de mudar
+          </Heading>
+        </Slide>
+        <Slide bgColor="secondary">
+          <Image src={images.monolith} />
+          <Text
+            margin="50px"
+            style={{ fontSize: "24px", fontStyle: "italic" }}
+            textColor="primary"
+          >
+            Fonte: https://micro-frontends.org/
+          </Text>
+        </Slide>
+        <Slide bgColor="secondary">
+          <Image src={images.micro} />
+          <Text
+            margin="50px"
+            style={{ fontSize: "24px", fontStyle: "italic" }}
+            textColor="primary"
+          >
+            Fonte: https://micro-frontends.org/
+          </Text>
+        </Slide>
+        <Slide bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>
             Typography
           </Heading>
@@ -72,7 +220,7 @@ export default class Presentation extends React.Component {
             Standard text
           </Text>
         </Slide>
-        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
+        <Slide bgColor="primary" textColor="tertiary">
           <Heading size={6} textColor="secondary" caps>
             Standard List
           </Heading>
@@ -83,7 +231,7 @@ export default class Presentation extends React.Component {
             <ListItem>Item 4</ListItem>
           </List>
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+        <Slide bgColor="secondary" textColor="primary">
           <BlockQuote>
             <Quote>Example Quote</Quote>
             <Cite>Author</Cite>
