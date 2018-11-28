@@ -31,7 +31,7 @@ const theme = createTheme(
     primary: "#2a2629",
     secondary: "white",
     tertiary: "#fb8292",
-    quaternary: "#00fac2"
+    quaternary: "#6d7b73"
   },
   {
     primary: "Montserrat",
@@ -43,14 +43,6 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Deck transition={["fade"]} transitionDuration={500} theme={theme}>
-        <Slide bgColor="tertiary">
-          <Heading size={1} fit caps lineHeight={1} textColor="primary">
-            Micro Frontends
-          </Heading>
-          <Text margin="10px 0 0" textColor="secondary" fit bold>
-            Matheus Lima
-          </Text>
-        </Slide>
         <Slide bgColor="primary">
           <Heading size={3} lineHeight={1.4} textColor="secondary">
             O que buscamos em um projeto de Software?
@@ -177,6 +169,14 @@ export default class Presentation extends React.Component {
             Mas isso está próximo de mudar
           </Heading>
         </Slide>
+        <Slide bgColor="tertiary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Micro Frontends
+          </Heading>
+          <Text margin="10px 0 0" textColor="secondary" fit bold>
+            Matheus Lima
+          </Text>
+        </Slide>
         <Slide bgColor="secondary">
           <Image src={images.monolith} />
           <Text
@@ -186,6 +186,82 @@ export default class Presentation extends React.Component {
           >
             Fonte: https://micro-frontends.org/
           </Text>
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading size={3} lineHeight={1.4} textColor="secondary">
+            O Back-End evoluiu, e saiu do monolito
+          </Heading>
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading size={3} lineHeight={1.4} textColor="secondary">
+            Mas o Front-End não
+          </Heading>
+        </Slide>
+        <Slide bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Problemas:
+          </Heading>
+          <List>
+            <ListItem margin="20px">Dificuldade de manutenção</ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Impossível fazer <i>deploys</i> individuais
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Apenas um <i>framework</i>
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Código legado
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Problemas:
+          </Heading>
+          <List>
+            <ListItem margin="20px">Dificuldade de manutenção</ListItem>
+            <ListItem margin="20px">
+              Impossível fazer <i>deploys</i> individuais
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Apenas um <i>framework</i>
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Código legado
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Problemas:
+          </Heading>
+          <List>
+            <ListItem margin="20px">Dificuldade de manutenção</ListItem>
+            <ListItem margin="20px">
+              Impossível fazer <i>deploys</i> individuais
+            </ListItem>
+            <ListItem margin="20px">
+              Apenas um <i>framework</i>
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Código legado
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Problemas:
+          </Heading>
+          <List>
+            <ListItem margin="20px">Dificuldade de manutenção</ListItem>
+            <ListItem margin="20px">
+              Impossível fazer <i>deploys</i> individuais
+            </ListItem>
+            <ListItem margin="20px">
+              Apenas um <i>framework</i>
+            </ListItem>
+            <ListItem margin="20px">Código legado</ListItem>
+          </List>
         </Slide>
         <Slide bgColor="secondary">
           <Image src={images.micro} />
@@ -197,45 +273,10 @@ export default class Presentation extends React.Component {
             Fonte: https://micro-frontends.org/
           </Text>
         </Slide>
-        <Slide bgColor="tertiary">
-          <Heading size={6} textColor="primary" caps>
-            Typography
-          </Heading>
-          <Heading size={1} textColor="secondary">
-            Heading 1
-          </Heading>
-          <Heading size={2} textColor="secondary">
-            Heading 2
-          </Heading>
-          <Heading size={3} textColor="secondary">
-            Heading 3
-          </Heading>
-          <Heading size={4} textColor="secondary">
-            Heading 4
-          </Heading>
-          <Heading size={5} textColor="secondary">
-            Heading 5
-          </Heading>
-          <Text size={6} textColor="secondary">
-            Standard text
+        <Slide bgColor="primary">
+          <Text size={1} fit lineHeight={1} textColor="tertiary">
+            @matheusml
           </Text>
-        </Slide>
-        <Slide bgColor="primary" textColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>
-            Standard List
-          </Heading>
-          <List>
-            <ListItem>Item 1</ListItem>
-            <ListItem>Item 2</ListItem>
-            <ListItem>Item 3</ListItem>
-            <ListItem>Item 4</ListItem>
-          </List>
-        </Slide>
-        <Slide bgColor="secondary" textColor="primary">
-          <BlockQuote>
-            <Quote>Example Quote</Quote>
-            <Cite>Author</Cite>
-          </BlockQuote>
         </Slide>
       </Deck>
     );
