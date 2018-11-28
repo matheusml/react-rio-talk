@@ -273,6 +273,72 @@ export default class Presentation extends React.Component {
             Fonte: https://micro-frontends.org/
           </Text>
         </Slide>
+        <Slide bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Soluções:
+          </Heading>
+          <List>
+            <ListItem margin="20px">Facilidade de manutenção</ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              <i>Deploys</i> individuais
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Quantos <i>frameworks</i> quiser
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Diminuição do código legado
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Soluções:
+          </Heading>
+          <List>
+            <ListItem margin="20px">Facilidade de manutenção</ListItem>
+            <ListItem margin="20px">
+              <i>Deploys</i> individuais
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Quantos <i>frameworks</i> quiser
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Diminuição do código legado
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Soluções:
+          </Heading>
+          <List>
+            <ListItem margin="20px">Facilidade de manutenção</ListItem>
+            <ListItem margin="20px">
+              <i>Deploys</i> individuais
+            </ListItem>
+            <ListItem margin="20px">
+              Quantos <i>frameworks</i> quiser
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Diminuição do código legado
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Soluções:
+          </Heading>
+          <List>
+            <ListItem margin="20px">Facilidade de manutenção</ListItem>
+            <ListItem margin="20px">
+              <i>Deploys</i> individuais
+            </ListItem>
+            <ListItem margin="20px">
+              Quantos <i>frameworks</i> quiser
+            </ListItem>
+            <ListItem margin="20px">Diminuição do código legado</ListItem>
+          </List>
+        </Slide>
         <Slide bgColor="primary">
           <Text size={1} fit lineHeight={1} textColor="tertiary">
             @matheusml
