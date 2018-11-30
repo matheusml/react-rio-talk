@@ -12,7 +12,9 @@ import {
   Quote,
   Slide,
   Text,
-  Image
+  Image,
+  Fit,
+  Fill
 } from "spectacle";
 
 // Import theme
@@ -23,7 +25,12 @@ require("normalize.css");
 
 const images = {
   monolith: require("../assets/monolith.png"),
-  micro: require("../assets/micro.png")
+  micro: require("../assets/micro.png"),
+  youtube1: require("../assets/youtube1.png"),
+  youtube2: require("../assets/youtube2.png"),
+  youtube3: require("../assets/youtube3.png"),
+  youtube4: require("../assets/youtube4.png"),
+  youtube5: require("../assets/youtube5.png")
 };
 
 const theme = createTheme(
@@ -42,15 +49,15 @@ const theme = createTheme(
 export default class Presentation extends React.Component {
   render() {
     return (
-      <Deck transition={["fade"]} transitionDuration={500} theme={theme}>
+      <Deck transition={["fade"]} transitionDuration={750} theme={theme}>
         <Slide bgColor="primary">
           <Heading size={3} lineHeight={1.4} textColor="secondary">
-            O que buscamos em um projeto de Software?
+            What do we want in a Software Project?
           </Heading>
         </Slide>
         <Slide bgColor="primary">
           <Heading margin="20px" size={4} textColor="tertiary">
-            Escalabilidade
+            Scalability
           </Heading>
           <Heading
             style={{ opacity: 0.3 }}
@@ -66,7 +73,7 @@ export default class Presentation extends React.Component {
             size={4}
             textColor="tertiary"
           >
-            Evolução
+            Evolvability
           </Heading>
         </Slide>
         <Slide bgColor="primary">
@@ -76,7 +83,7 @@ export default class Presentation extends React.Component {
             size={4}
             textColor="tertiary"
           >
-            Escalabilidade
+            Scalability
           </Heading>
           <Heading margin="20px" size={4} textColor="tertiary">
             Performance
@@ -87,7 +94,7 @@ export default class Presentation extends React.Component {
             size={4}
             textColor="tertiary"
           >
-            Evolução
+            Evolvability
           </Heading>
         </Slide>
         <Slide bgColor="primary">
@@ -97,44 +104,7 @@ export default class Presentation extends React.Component {
             size={4}
             textColor="tertiary"
           >
-            Escalabilidade
-          </Heading>
-          <Heading
-            style={{ opacity: 0.3 }}
-            margin="20px"
-            size={4}
-            textColor="tertiary"
-          >
-            Performance
-          </Heading>
-          <Heading margin="20px" size={4} textColor="tertiary">
-            Evolução
-          </Heading>
-        </Slide>
-        <Slide bgColor="primary">
-          <Heading size={3} lineHeight={1.4} textColor="secondary">
-            No Front-End, nunca tivemos os três juntos
-          </Heading>
-        </Slide>
-        <Slide bgColor="primary">
-          <Heading margin="20px" size={4} textColor="tertiary">
-            Escalabilidade
-          </Heading>
-          <Heading margin="20px" size={4} textColor="tertiary">
-            Performance
-          </Heading>
-          <Heading
-            style={{ opacity: 0.3 }}
-            margin="20px"
-            size={4}
-            textColor="tertiary"
-          >
-            Evolução
-          </Heading>
-        </Slide>
-        <Slide bgColor="primary">
-          <Heading margin="20px" size={4} textColor="tertiary">
-            Escalabilidade
+            Scalability
           </Heading>
           <Heading
             style={{ opacity: 0.3 }}
@@ -145,28 +115,65 @@ export default class Presentation extends React.Component {
             Performance
           </Heading>
           <Heading margin="20px" size={4} textColor="tertiary">
-            Evolução
-          </Heading>
-        </Slide>
-        <Slide bgColor="primary">
-          <Heading
-            style={{ opacity: 0.3 }}
-            margin="20px"
-            size={4}
-            textColor="tertiary"
-          >
-            Escalabilidade
-          </Heading>
-          <Heading margin="20px" size={4} textColor="tertiary">
-            Performance
-          </Heading>
-          <Heading margin="20px" size={4} textColor="tertiary">
-            Evolução
+            Evolvability
           </Heading>
         </Slide>
         <Slide bgColor="primary">
           <Heading size={3} lineHeight={1.4} textColor="secondary">
-            Mas isso está próximo de mudar
+            In the Front End, we've never had all three together
+          </Heading>
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading margin="20px" size={4} textColor="tertiary">
+            Scalability
+          </Heading>
+          <Heading margin="20px" size={4} textColor="tertiary">
+            Performance
+          </Heading>
+          <Heading
+            style={{ opacity: 0.3 }}
+            margin="20px"
+            size={4}
+            textColor="tertiary"
+          >
+            Evolvability
+          </Heading>
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading margin="20px" size={4} textColor="tertiary">
+            Scalability
+          </Heading>
+          <Heading
+            style={{ opacity: 0.3 }}
+            margin="20px"
+            size={4}
+            textColor="tertiary"
+          >
+            Performance
+          </Heading>
+          <Heading margin="20px" size={4} textColor="tertiary">
+            Evolvability
+          </Heading>
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading
+            style={{ opacity: 0.3 }}
+            margin="20px"
+            size={4}
+            textColor="tertiary"
+          >
+            Scalability
+          </Heading>
+          <Heading margin="20px" size={4} textColor="tertiary">
+            Performance
+          </Heading>
+          <Heading margin="20px" size={4} textColor="tertiary">
+            Evolvability
+          </Heading>
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading size={3} lineHeight={1.4} textColor="secondary">
+            But this is about to change
           </Heading>
         </Slide>
         <Slide bgColor="tertiary">
@@ -184,160 +191,160 @@ export default class Presentation extends React.Component {
             style={{ fontSize: "24px", fontStyle: "italic" }}
             textColor="primary"
           >
-            Fonte: https://micro-frontends.org/
+            Source: https://micro-frontends.org/
           </Text>
         </Slide>
         <Slide bgColor="primary">
           <Heading size={3} lineHeight={1.4} textColor="secondary">
-            O Back-End evoluiu, e saiu do monolito
+            The Back-End evolved, and left the monolith
           </Heading>
         </Slide>
         <Slide bgColor="primary">
           <Heading size={3} lineHeight={1.4} textColor="secondary">
-            Mas o Front-End não
+            But the Front End did not
           </Heading>
         </Slide>
         <Slide bgColor="primary" textColor="tertiary">
           <Heading size={6} textColor="secondary" caps>
-            Problemas:
+            Issues:
           </Heading>
           <List>
-            <ListItem margin="20px">Dificuldade de manutenção</ListItem>
+            <ListItem margin="20px">Doesn't scale</ListItem>
             <ListItem margin="20px" style={{ opacity: 0.3 }}>
-              Impossível fazer <i>deploys</i> individuais
+              No isolate code
             </ListItem>
             <ListItem margin="20px" style={{ opacity: 0.3 }}>
-              Apenas um <i>framework</i>
+              One framework only
             </ListItem>
             <ListItem margin="20px" style={{ opacity: 0.3 }}>
-              Código legado
+              Legacy code
             </ListItem>
           </List>
         </Slide>
         <Slide bgColor="primary" textColor="tertiary">
           <Heading size={6} textColor="secondary" caps>
-            Problemas:
+            Issues:
           </Heading>
           <List>
-            <ListItem margin="20px">Dificuldade de manutenção</ListItem>
-            <ListItem margin="20px">
-              Impossível fazer <i>deploys</i> individuais
+            <ListItem margin="20px">Doesn't scale</ListItem>
+            <ListItem margin="20px">No isolate code</ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              One framework only
             </ListItem>
             <ListItem margin="20px" style={{ opacity: 0.3 }}>
-              Apenas um <i>framework</i>
-            </ListItem>
-            <ListItem margin="20px" style={{ opacity: 0.3 }}>
-              Código legado
+              Legacy code
             </ListItem>
           </List>
         </Slide>
         <Slide bgColor="primary" textColor="tertiary">
           <Heading size={6} textColor="secondary" caps>
-            Problemas:
+            Issues:
           </Heading>
           <List>
-            <ListItem margin="20px">Dificuldade de manutenção</ListItem>
-            <ListItem margin="20px">
-              Impossível fazer <i>deploys</i> individuais
-            </ListItem>
-            <ListItem margin="20px">
-              Apenas um <i>framework</i>
-            </ListItem>
+            <ListItem margin="20px">Doesn't scale</ListItem>
+            <ListItem margin="20px">No isolate code</ListItem>
+            <ListItem margin="20px">One framework only</ListItem>
             <ListItem margin="20px" style={{ opacity: 0.3 }}>
-              Código legado
+              Legacy code
             </ListItem>
           </List>
         </Slide>
         <Slide bgColor="primary" textColor="tertiary">
           <Heading size={6} textColor="secondary" caps>
-            Problemas:
+            Issues:
           </Heading>
           <List>
-            <ListItem margin="20px">Dificuldade de manutenção</ListItem>
-            <ListItem margin="20px">
-              Impossível fazer <i>deploys</i> individuais
-            </ListItem>
-            <ListItem margin="20px">
-              Apenas um <i>framework</i>
-            </ListItem>
-            <ListItem margin="20px">Código legado</ListItem>
+            <ListItem margin="20px">Doesn't scale</ListItem>
+            <ListItem margin="20px">No isolate code</ListItem>
+            <ListItem margin="20px">One framework only</ListItem>
+            <ListItem margin="20px">Legacy code</ListItem>
           </List>
         </Slide>
         <Slide bgColor="secondary">
           <Image src={images.micro} />
           <Text
-            margin="50px"
+            margin="20px"
             style={{ fontSize: "24px", fontStyle: "italic" }}
             textColor="primary"
           >
-            Fonte: https://micro-frontends.org/
+            Source: https://micro-frontends.org/
           </Text>
         </Slide>
         <Slide bgColor="primary" textColor="tertiary">
           <Heading size={6} textColor="secondary" caps>
-            Soluções:
+            Solutions:
           </Heading>
           <List>
-            <ListItem margin="20px">Facilidade de manutenção</ListItem>
+            <ListItem margin="20px">Easier to scale</ListItem>
             <ListItem margin="20px" style={{ opacity: 0.3 }}>
-              <i>Deploys</i> individuais
+              Code isolation
             </ListItem>
             <ListItem margin="20px" style={{ opacity: 0.3 }}>
-              Quantos <i>frameworks</i> quiser
+              Multiple frameworks
             </ListItem>
             <ListItem margin="20px" style={{ opacity: 0.3 }}>
-              Diminuição do código legado
+              Less legacy code
             </ListItem>
           </List>
         </Slide>
         <Slide bgColor="primary" textColor="tertiary">
           <Heading size={6} textColor="secondary" caps>
-            Soluções:
+            Solutions:
           </Heading>
           <List>
-            <ListItem margin="20px">Facilidade de manutenção</ListItem>
-            <ListItem margin="20px">
-              <i>Deploys</i> individuais
+            <ListItem margin="20px">Easier to scale</ListItem>
+            <ListItem margin="20px">Code isolation</ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Multiple frameworks
             </ListItem>
             <ListItem margin="20px" style={{ opacity: 0.3 }}>
-              Quantos <i>frameworks</i> quiser
-            </ListItem>
-            <ListItem margin="20px" style={{ opacity: 0.3 }}>
-              Diminuição do código legado
+              Less legacy code
             </ListItem>
           </List>
         </Slide>
         <Slide bgColor="primary" textColor="tertiary">
           <Heading size={6} textColor="secondary" caps>
-            Soluções:
+            Solutions:
           </Heading>
           <List>
-            <ListItem margin="20px">Facilidade de manutenção</ListItem>
-            <ListItem margin="20px">
-              <i>Deploys</i> individuais
-            </ListItem>
-            <ListItem margin="20px">
-              Quantos <i>frameworks</i> quiser
-            </ListItem>
+            <ListItem margin="20px">Easier to scale</ListItem>
+            <ListItem margin="20px">Code isolation</ListItem>
+            <ListItem margin="20px">Multiple frameworks</ListItem>
             <ListItem margin="20px" style={{ opacity: 0.3 }}>
-              Diminuição do código legado
+              Less legacy code
             </ListItem>
           </List>
         </Slide>
         <Slide bgColor="primary" textColor="tertiary">
           <Heading size={6} textColor="secondary" caps>
-            Soluções:
+            Solutions:
           </Heading>
           <List>
-            <ListItem margin="20px">Facilidade de manutenção</ListItem>
-            <ListItem margin="20px">
-              <i>Deploys</i> individuais
-            </ListItem>
-            <ListItem margin="20px">
-              Quantos <i>frameworks</i> quiser
-            </ListItem>
-            <ListItem margin="20px">Diminuição do código legado</ListItem>
+            <ListItem margin="20px">Easier to scale</ListItem>
+            <ListItem margin="20px">Code isolation</ListItem>
+            <ListItem margin="20px">Multiple frameworks</ListItem>
+            <ListItem margin="20px">Less legacy code</ListItem>
           </List>
+        </Slide>
+        <Slide bgColor="secondary">
+          <Image src={images.youtube1} />
+        </Slide>
+        <Slide bgColor="secondary">
+          <Image src={images.youtube2} />
+        </Slide>
+        <Slide bgColor="secondary">
+          <Image src={images.youtube3} />
+        </Slide>
+        <Slide bgColor="secondary">
+          <Image src={images.youtube4} />
+        </Slide>
+        <Slide bgColor="secondary">
+          <Image src={images.youtube5} />
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading size={3} lineHeight={1.4} textColor="secondary">
+            Show me the code
+          </Heading>
         </Slide>
         <Slide bgColor="primary">
           <Text size={1} fit lineHeight={1} textColor="tertiary">
