@@ -184,6 +184,103 @@ export default class Presentation extends React.Component {
             Matheus Lima
           </Text>
         </Slide>
+        <Slide bgColor="primary">
+          <Heading size={3} lineHeight={1.4} textColor="secondary">
+            But before we talk about Micro Frontends
+          </Heading>
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading size={3} lineHeight={1.4} textColor="secondary">
+            Let's talk about Microservices
+          </Heading>
+        </Slide>
+        <Slide bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Microservices:
+          </Heading>
+          <List>
+            <ListItem margin="20px">Autonomous</ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Focus on doing one thing well
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Microservices:
+          </Heading>
+          <List>
+            <ListItem margin="20px">Autonomous</ListItem>
+            <ListItem margin="20px">Focus on doing one thing well</ListItem>
+          </List>
+        </Slide>
+        <Slide bgColor="tertiary">
+          <Heading size={3} lineHeight={1.4} textColor="secondary">
+            Autonomous?
+          </Heading>
+        </Slide>
+        <Slide bgColor="tertiary" textColor="primary">
+          <Heading size={6} textColor="secondary" caps>
+            Autonomous:
+          </Heading>
+          <List>
+            <ListItem margin="20px">Maintain contracts</ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Indendepent availability, delivery and ownership
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Handle failures on their own
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Able to manage access
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide bgColor="tertiary" textColor="primary">
+          <Heading size={6} textColor="secondary" caps>
+            Autonomous:
+          </Heading>
+          <List>
+            <ListItem margin="20px">Maintain contracts</ListItem>
+            <ListItem margin="20px">
+              Indendepent availability, delivery and ownership
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Handle failures on their own
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Able to manage access
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide bgColor="tertiary" textColor="primary">
+          <Heading size={6} textColor="secondary" caps>
+            Autonomous:
+          </Heading>
+          <List>
+            <ListItem margin="20px">Maintain contracts</ListItem>
+            <ListItem margin="20px">
+              Indendepent availability, delivery and ownership
+            </ListItem>
+            <ListItem margin="20px">Handle failures on their own</ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Able to manage access
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide bgColor="tertiary" textColor="primary">
+          <Heading size={6} textColor="secondary" caps>
+            Autonomous:
+          </Heading>
+          <List>
+            <ListItem margin="20px">Maintain contracts</ListItem>
+            <ListItem margin="20px">
+              Indendepent availability, delivery and ownership
+            </ListItem>
+            <ListItem margin="20px">Handle failures on their own</ListItem>
+            <ListItem margin="20px">Able to manage access</ListItem>
+          </List>
+        </Slide>
         <Slide bgColor="secondary">
           <Image src={images.monolith} />
           <Text
