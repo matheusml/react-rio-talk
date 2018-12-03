@@ -30,7 +30,9 @@ const images = {
   youtube2: require("../assets/youtube2.png"),
   youtube3: require("../assets/youtube3.png"),
   youtube4: require("../assets/youtube4.png"),
-  youtube5: require("../assets/youtube5.png")
+  youtube5: require("../assets/youtube5.png"),
+  social: require("../assets/social.png"),
+  carta: require("../assets/carta.gif")
 };
 
 const theme = createTheme(
@@ -183,6 +185,15 @@ export default class Presentation extends React.Component {
           <Heading margin="10px 0 0" fit textColor="secondary" bold>
             and death of the last monolith
           </Heading>
+        </Slide>
+        <Slide bgColor="secondary">
+          <Image src={images.social} />
+          <Text margin="10px 0 0" fit textColor="primary">
+            @matheusml
+          </Text>
+        </Slide>
+        <Slide bgColor="secondary">
+          <Image src={images.carta} />
         </Slide>
         <Slide bgColor="primary">
           <Heading size={3} lineHeight={1.4} textColor="secondary">
