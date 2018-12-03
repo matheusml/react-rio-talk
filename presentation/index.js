@@ -177,12 +177,12 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
         <Slide bgColor="tertiary">
-          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+          <Heading caps fit textColor="primary">
             Micro Frontends
           </Heading>
-          <Text margin="10px 0 0" textColor="secondary" fit bold>
-            Matheus Lima
-          </Text>
+          <Heading margin="10px 0 0" fit textColor="secondary" bold>
+            and death of the last monolith
+          </Heading>
         </Slide>
         <Slide bgColor="primary">
           <Heading size={3} lineHeight={1.4} textColor="secondary">
