@@ -32,7 +32,8 @@ const images = {
   youtube4: require("../assets/youtube4.png"),
   youtube5: require("../assets/youtube5.png"),
   social: require("../assets/social.png"),
-  carta: require("../assets/carta.gif")
+  carta: require("../assets/carta.gif"),
+  companies: require("../assets/companies.png")
 };
 
 const theme = createTheme(
@@ -502,6 +503,14 @@ export default class Presentation extends React.Component {
           <Heading size={3} lineHeight={1.4} textColor="secondary">
             Show me the code
           </Heading>
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading size={3} lineHeight={1.4} textColor="secondary">
+            Who is using this?
+          </Heading>
+        </Slide>
+        <Slide bgColor="secondary">
+          <Image src={images.companies} />
         </Slide>
         <Slide bgColor="primary">
           <Heading margin="20px" size={4} textColor="tertiary">
