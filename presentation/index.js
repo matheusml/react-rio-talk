@@ -33,7 +33,10 @@ const images = {
   youtube5: require("../assets/youtube5.png"),
   social: require("../assets/social.png"),
   carta: require("../assets/carta.gif"),
-  companies: require("../assets/companies.png")
+  companies: require("../assets/companies.png"),
+  mmm1: require("../assets/mmm1.png"),
+  mmm2: require("../assets/mmm2.png"),
+  mmm3: require("../assets/mmm3.png")
 };
 
 const theme = createTheme(
@@ -342,6 +345,35 @@ export default class Presentation extends React.Component {
             </ListItem>
           </List>
         </Slide>
+        <Slide bgColor="primary">
+          <Heading size={3} lineHeight={1.4} textColor="secondary">
+            By the way, this is not new
+          </Heading>
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading size={3} lineHeight={1.4} textColor="secondary">
+            We've been talking about this since the 70s
+          </Heading>
+        </Slide>
+        <Slide bgColor="secondary">
+          <Image width={"300px"} src={images.mmm1} />
+        </Slide>
+        <Slide bgColor="secondary">
+          <Image width={"250px"} src={images.mmm2} />
+        </Slide>
+        <Slide bgColor="secondary">
+          <Image width={"275px"} src={images.mmm3} />
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading size={3} lineHeight={1.4} textColor="secondary">
+            Ok, now that you understand Microservices
+          </Heading>
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading size={3} lineHeight={1.4} textColor="secondary">
+            We can talk about Micro Frontends
+          </Heading>
+        </Slide>
         <Slide bgColor="secondary">
           <Image src={images.monolith} />
           <Text
@@ -504,9 +536,47 @@ export default class Presentation extends React.Component {
             Show me the code
           </Heading>
         </Slide>
+        <Slide bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Warnings:
+          </Heading>
+          <List>
+            <ListItem margin="20px">Make standards</ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Don't use it in simple/small apps
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              You can use multiple frameworks, but you shouldn't
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Warnings:
+          </Heading>
+          <List>
+            <ListItem margin="20px">Make standards</ListItem>
+            <ListItem margin="20px">Don't use it in simple/small apps</ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              You can use multiple frameworks, but you shouldn't
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Warnings:
+          </Heading>
+          <List>
+            <ListItem margin="20px">Make standards</ListItem>
+            <ListItem margin="20px">Don't use it in simple/small apps</ListItem>
+            <ListItem margin="20px">
+              You can use multiple frameworks, but you shouldn't
+            </ListItem>
+          </List>
+        </Slide>
         <Slide bgColor="primary">
           <Heading size={3} lineHeight={1.4} textColor="secondary">
-            Who is using this?
+            Who is using Micro Frontends today?
           </Heading>
         </Slide>
         <Slide bgColor="secondary">
@@ -524,7 +594,7 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
         <Slide bgColor="primary">
-          <Text size={1} fit lineHeight={1} textColor="tertiary">
+          <Text size={1} fit lineHeight={1} textColor="secondary">
             @matheusml
           </Text>
         </Slide>
