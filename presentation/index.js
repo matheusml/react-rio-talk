@@ -36,7 +36,8 @@ const images = {
   companies: require("../assets/companies.png"),
   mmm1: require("../assets/mmm1.png"),
   mmm2: require("../assets/mmm2.png"),
-  mmm3: require("../assets/mmm3.png")
+  mmm3: require("../assets/mmm3.png"),
+  book: require("../assets/book.jpg")
 };
 
 const theme = createTheme(
@@ -363,6 +364,190 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide bgColor="secondary">
           <Image width={"275px"} src={images.mmm3} />
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading size={3} lineHeight={1.4} textColor="secondary">
+            Since we're talking about books...
+          </Heading>
+        </Slide>
+        <Slide bgColor="secondary">
+          <Image src={images.book} width={"350px"} />
+        </Slide>
+        <Slide bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            8 key principles:
+          </Heading>
+          <List>
+            <ListItem margin="20px">Modelled around business domain</ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Culture of automation
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Hide implementation details
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Decentralise all the things
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Deploy independently
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Consumer First
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Isolate Failures
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Highly observable
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            8 key principles:
+          </Heading>
+          <List>
+            <ListItem margin="20px">Modelled around business domain</ListItem>
+            <ListItem margin="20px">Culture of automation</ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Hide implementation details
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Decentralise all the things
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Deploy independently
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Consumer First
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Isolate Failures
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Highly observable
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            8 key principles:
+          </Heading>
+          <List>
+            <ListItem margin="20px">Modelled around business domain</ListItem>
+            <ListItem margin="20px">Culture of automation</ListItem>
+            <ListItem margin="20px">Hide implementation details</ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Decentralise all the things
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Deploy independently
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Consumer First
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Isolate Failures
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Highly observable
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            8 key principles:
+          </Heading>
+          <List>
+            <ListItem margin="20px">Modelled around business domain</ListItem>
+            <ListItem margin="20px">Culture of automation</ListItem>
+            <ListItem margin="20px">Hide implementation details</ListItem>
+            <ListItem margin="20px">Decentralise all the things</ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Deploy independently
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Consumer First
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Isolate Failures
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Highly observable
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            8 key principles:
+          </Heading>
+          <List>
+            <ListItem margin="20px">Modelled around business domain</ListItem>
+            <ListItem margin="20px">Culture of automation</ListItem>
+            <ListItem margin="20px">Hide implementation details</ListItem>
+            <ListItem margin="20px">Decentralise all the things</ListItem>
+            <ListItem margin="20px">Deploy independently</ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Consumer First
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Isolate Failures
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Highly observable
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            8 key principles:
+          </Heading>
+          <List>
+            <ListItem margin="20px">Modelled around business domain</ListItem>
+            <ListItem margin="20px">Culture of automation</ListItem>
+            <ListItem margin="20px">Hide implementation details</ListItem>
+            <ListItem margin="20px">Decentralise all the things</ListItem>
+            <ListItem margin="20px">Deploy independently</ListItem>
+            <ListItem margin="20px">Consumer First</ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Isolate Failures
+            </ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Highly observable
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            8 key principles:
+          </Heading>
+          <List>
+            <ListItem margin="20px">Modelled around business domain</ListItem>
+            <ListItem margin="20px">Culture of automation</ListItem>
+            <ListItem margin="20px">Hide implementation details</ListItem>
+            <ListItem margin="20px">Decentralise all the things</ListItem>
+            <ListItem margin="20px">Deploy independently</ListItem>
+            <ListItem margin="20px">Consumer First</ListItem>
+            <ListItem margin="20px">Isolate Failures</ListItem>
+            <ListItem margin="20px" style={{ opacity: 0.3 }}>
+              Highly observable
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            8 key principles:
+          </Heading>
+          <List>
+            <ListItem margin="20px">Modelled around business domain</ListItem>
+            <ListItem margin="20px">Culture of automation</ListItem>
+            <ListItem margin="20px">Hide implementation details</ListItem>
+            <ListItem margin="20px">Decentralise all the things</ListItem>
+            <ListItem margin="20px">Deploy independently</ListItem>
+            <ListItem margin="20px">Consumer First</ListItem>
+            <ListItem margin="20px">Isolate Failures</ListItem>
+            <ListItem margin="20px">Highly observable</ListItem>
+          </List>
         </Slide>
         <Slide bgColor="primary">
           <Heading size={3} lineHeight={1.4} textColor="secondary">
