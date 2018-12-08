@@ -244,6 +244,31 @@ export default class Presentation extends React.Component {
             <ListItem margin="20px">
               Autonomous
               <List>
+                <ListItem margin="20px" style={{ opacity: 0 }}>
+                  Maintain contracts
+                </ListItem>
+                <ListItem margin="20px" style={{ opacity: 0 }}>
+                  Indendepent availability, delivery and ownership
+                </ListItem>
+                <ListItem margin="20px" style={{ opacity: 0 }}>
+                  Handle failures on their own
+                </ListItem>
+                <ListItem margin="20px" style={{ opacity: 0 }}>
+                  Able to manage access
+                </ListItem>
+              </List>
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Microservices:
+          </Heading>
+          <List>
+            <ListItem margin="20px">Focus on doing one thing well</ListItem>
+            <ListItem margin="20px">
+              Autonomous
+              <List>
                 <ListItem margin="20px" style={{ opacity: 0.3 }}>
                   Maintain contracts
                 </ListItem>
@@ -571,12 +596,12 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide bgColor="primary">
           <Heading size={3} lineHeight={1.4} textColor="secondary">
-            The Back-End evolved, and left the monolith
+            The Back-End evolved, and abandoned the monolith
           </Heading>
         </Slide>
         <Slide bgColor="primary">
           <Heading size={3} lineHeight={1.4} textColor="secondary">
-            But the Front End did not
+            But the Front End remaineid the same
           </Heading>
         </Slide>
         <Slide bgColor="primary" textColor="tertiary">
@@ -766,6 +791,31 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide bgColor="secondary">
           <Image src={images.companies} />
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading size={3} lineHeight={1.4} textColor="secondary">
+            To summarize
+          </Heading>
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading size={3} lineHeight={1.4} textColor="secondary">
+            Microservices are great
+          </Heading>
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading size={3} lineHeight={1.4} textColor="secondary">
+            But we're still not doing that in the front-end
+          </Heading>
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading size={3} lineHeight={1.4} textColor="secondary">
+            Enter Micro Frontends
+          </Heading>
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading size={3} lineHeight={1.4} textColor="secondary">
+            Which will help us with:
+          </Heading>
         </Slide>
         <Slide bgColor="primary">
           <Heading margin="20px" size={4} textColor="tertiary">
