@@ -56,7 +56,12 @@ const theme = createTheme(
 export default class Presentation extends React.Component {
   render() {
     return (
-      <Deck transition={["fade"]} transitionDuration={750} theme={theme}>
+      <Deck
+        transition={["fade"]}
+        transitionDuration={750}
+        theme={theme}
+        progress="bar"
+      >
         <Slide bgColor="primary">
           <Heading size={3} lineHeight={1.4} textColor="secondary">
             What do we want in a Software Project?
