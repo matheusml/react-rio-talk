@@ -684,12 +684,12 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide bgColor="primary">
           <Heading size={3} lineHeight={1.4} textColor="secondary">
-            Enter Micro Frontends
+            So let's start using Micro Frontends
           </Heading>
         </Slide>
         <Slide bgColor="primary">
           <Heading size={3} lineHeight={1.4} textColor="secondary">
-            Which will help us with:
+            And with that we'll have:
           </Heading>
         </Slide>
         <Slide bgColor="primary">
