@@ -481,7 +481,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide bgColor="primary">
           <Heading size={3} lineHeight={1.4} textColor="secondary">
-            But the Front End remaineid the same
+            But the Front End remained the same
           </Heading>
         </Slide>
         <Slide bgColor="primary" textColor="tertiary">
